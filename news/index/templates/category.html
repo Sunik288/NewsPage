@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Page: {{ category }}</title>
+</head>
+<body>
+{% for n in news %}
+<a href="/news/{{ n.id }}">{{ n.title }}</a>
+<br>
+{% endfor %}
+<a href="/">Home</a>
+</body>
+</html>

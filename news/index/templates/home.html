@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Latest News</h1>
+<hr>
+{% for c in categories %}
+    <a href="/category/{{ c.id }}">{{ c }}</a>
+    <br>
+{% endfor %}
+
+{% for i in news %}
+    <a href="/news/{{ i.id }}">{{ i.title }}</a>
+    <br>
+
+{% endfor %}
+
+</body>
+</html>
